@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 binding.lvNama.setOnItemClickListener { _, _, position, _ ->
                     val userId = userIdList[position]
                     val intent = Intent(this@MainActivity, UserDetailActivity::class.java)
-                    intent.putExtra("userId", userId)
+                    intent.putExtra("USER_ID", userId)
                     startActivity(intent)
                 }
             }
